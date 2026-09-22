@@ -200,18 +200,30 @@ Explanation: 5 is the smallest positive missing number
 
 ############
 
-def shift_letters(s):
-    result = ''
-    for i in range(0, len(s), 2):
-        char = s[i] # k
-        digit = int(s[i + 1]) # 3
-        # shift character and wrap from 'z' to 'a'
-        new_char = chr((ord(char) - ord('a') + digit) % 26 + ord('a'))
-        result += new_char
-    return result
+# def shift_letters(s):
+#     result = ''
+#     for i in range(0, len(s), 2):
+#         char = s[i] # k
+#         digit = int(s[i + 1]) # 3
+#         # shift character and wrap from 'z' to 'a'
+#         new_char = chr((ord(char) - ord('a') + digit) % 26 + ord('a'))
+#         result += new_char
+#     return result
 
-# Example usage
-s = "k3a4"
-# s = "y2b2"
-print(shift_letters(s))  
+# # Example usage
+# s = "k3a4"
+# # s = "y2b2"
+# print(shift_letters(s))  
 
+# numbers = [10, 20, 30, 20, 40, 10, 50]
+
+# seen = set()
+# duplicates = set()
+
+# for number in numbers:
+#     if number in seen:
+#         duplicates.add(number)
+#     else:
+#         seen.add(number)
+
+# print(duplicates)
